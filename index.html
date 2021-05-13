@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Kalkultor walut</title>
     <link rel="icon" href="images/JC.png">
-    <meta property ="og:image" content="images/share.png">
-    <meta property = og:description content="It is simple currency conerter, made for test.">
+    <meta property="og:image" content="images/share.png">
+    <meta property=og:description content="It is simple currency conerter, made for test.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -21,40 +21,31 @@
     <link href="CSS/header.css" rel="stylesheet">
     <script defer src="JS/script.js"></script>
 </head>
-
 <body class="body">
-    <div>
-        <h1 class="header">Kantor wymiany walut GOLD zaprasza</h1>
-        <form class="form js-form">
-            <fieldset class="form__fildset">
-                <legend class="form__legend">Kalkulator wymiany walut</legend>
-                <p>
-                    <label class="form__label">
-                        <p><span class="form__labelText">Wymieniam: </span> </p>
-                        <input class="form__field js-amount" type="number" name="amount" step="1" min="1" value="1"
-                            autofocus required>
-                    </label>
-                    <label class="form__label">
-                        <select class="form__field js-currencySelect" name="currencyChoose">
-                            <option class=".js-selectUSD" name="currencySelect" value="USD">USD</option>
-                            <option class=".js-selectPLN" name="currencySelect" value="PLN">PLN</option>
-                    </label>
-                </p>
-                <p>
-                    <label class="form__label">
-                        <input type="submit" class="form__button js-submit" value="Przelicz">
-                    </label>
-                </p>
-                <p>
-                    <span class="form__field">*aktualny kurs wymiany <span>4,00PLN/USD</span> </span>
-                </p>
-                <p>Otrzymasz: <strong class="js-quote">N/A</strong> <span class="js-currencyQuote"></span> </p>
-            </fieldset>
-        </form>
-    </div>
-</body>
-<footer class="footer">
-    made by @Asia
-</footer>
+    <h1 class="header">Kantor wymiany walut GOLD zaprasza</h1>
+    <form class="form js-form">
+        <fieldset class="form__fildset">
+            <legend class="form__legend">Kalkulator wymiany walut</legend>
+            <label class="form__label">
+                <p><span class="form__labelText">Wymieniam: </span> </p>
+                <input class="form__field js-amount" type="number" name="amount" step="1" min="1" value="1" autofocus
+                    required>
+            </label>
+            <label class="form__label">
+                <select class="form__field js-currencySelect" name="currencyChoose">
+                    <option name="currencySelect" value="USD">USD</option>
+                    <option name="currencySelect" value="PLN">PLN</option>
+            </label>
+            <label class="form__label">
+                <input type="submit" class="form__button js-submit" value="Przelicz">
+            </label>
+            <p class="form__field"> *aktualny kurs wymiany 4,00PLN/USD</p>
 
+            <p>Otrzymasz: <strong class="js-quote">N/A</strong> <span class="js-currencyQuote"></span> </p>
+        </fieldset>
+    </form>
+    <footer class="footer">
+        <p>made by @Asia</p>
+    </footer>
+</body>
 </html>
